@@ -1,0 +1,16 @@
+|T
+clock => clock.IN1
+reset => reset.IN1
+out << F_a:fd.clock_p
+
+
+|T|F_a:fd
+clock => j.CLK
+clock => cnt[0].CLK
+clock => cnt[1].CLK
+reset => j.ACLR
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+clock_p <= j.DB_MAX_OUTPUT_PORT_TYPE
+
+

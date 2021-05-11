@@ -1,0 +1,40 @@
+/*
+ * Counter_tb
+ * ================
+ *================
+ * By: Feng Yan
+ * For: University of Leeds
+ * Date: 13th March 2021
+ *
+ *description
+ ------------
+ *give the counter rising edge everytime
+ */
+`timescale 1 ns/100 ps
+// Test bench module declaration.
+module Counter_tb();
+// Test Bench Generated Signals.
+    reg clock;
+    reg reset;
+// DUT Output Signals
+    wire[3:0] q;
+	 
+Counter counter_dut(
+ .clock(clock),
+ .reset(reset),
+ .q	 (q 	 )
+ );
+ // Test Bench Logic
+ initial begin
+ //Print to console that the simulation has started. 
+  $display("%d ns\t Simulation Started",$time);
+  //Monitor changes to all values listed, and automatically print to the console.
+  $monitor("%d ns\t clock=%d\t reset=%d\t q=%b",$time,clock,reset,q);
+ //Initialise reset to 1 and clock to 0 and d=0.
+ clock=1'b0;
+ reset=1'b1;
+ #4 reset=1'b0;
+ $display("%d ns\t Simulation Finished",$time); //Finished
+ end
+ always  #1 clock<=~clock;
+ endmodule 
