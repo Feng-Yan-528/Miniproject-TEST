@@ -7,6 +7,7 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST {C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/T.v}
 vlog -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST {C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/F_a.v}
+vlog -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST {C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/f_1.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/simulation {C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/simulation/T_tb (2).v}
 
@@ -15,4 +16,4 @@ vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lns
 add wave *
 view structure
 view signals
-run 60 ns
+run 3 sec

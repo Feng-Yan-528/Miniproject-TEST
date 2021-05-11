@@ -33,9 +33,9 @@ T t_dut(
  //Initialise reset to 1 and clock to 0 and d=0.
  clock=1'b0;
  reset=1'b0;
- #4
+ #500
  reset=1'b1;
  $display("%d ns\t Simulation Finished",$time); //Finished
  end
- always  #2 clock<=~clock;
+ always  #20 clock<=~clock;
  endmodule 
