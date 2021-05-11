@@ -5,12 +5,18 @@ out << F_a:fd.clock_p
 
 
 |T|F_a:fd
-clock => j.CLK
-clock => cnt[0].CLK
-clock => cnt[1].CLK
-reset => j.ACLR
-reset => cnt[0].ACLR
-reset => cnt[1].ACLR
-clock_p <= j.DB_MAX_OUTPUT_PORT_TYPE
+clock => clock_1.CLK
+clock => cnt_1[0].CLK
+clock => cnt_1[1].CLK
+clock => clock_0.CLK
+clock => cnt_0[0].CLK
+clock => cnt_0[1].CLK
+reset => cnt_1[0].ACLR
+reset => cnt_1[1].ACLR
+reset => clock_0.ACLR
+reset => clock_1.ACLR
+reset => cnt_0[0].ACLR
+reset => cnt_0[1].ACLR
+clock_p <= clock_p.DB_MAX_OUTPUT_PORT_TYPE
 
 
