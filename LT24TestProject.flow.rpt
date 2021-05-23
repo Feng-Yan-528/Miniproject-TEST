@@ -1,5 +1,5 @@
 Flow report for LT24TestProject
-Sat May 22 14:28:13 2021
+Sat May 22 17:54:13 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat May 22 14:28:00 2021       ;
+; Flow Status                     ; Successful - Sat May 22 17:53:59 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; LT24TestProject                             ;
 ; Top-level Entity Name           ; LT24Top                                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/22/2021 14:26:22 ;
+; Start date & time ; 05/22/2021 17:52:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LT24TestProject     ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+-----------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 18121611664596.162168998018552         ; --              ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 18121611664596.162170232811212         ; --              ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --              ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --              ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --              ; LT24Top     ; Top        ;
@@ -95,11 +95,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4853 MB             ; 00:00:36                           ;
-; Fitter                    ; 00:01:07     ; 1.1                     ; 6682 MB             ; 00:02:27                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4857 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:12     ; 1.4                     ; 5175 MB             ; 00:00:15                           ;
-; Total                     ; 00:01:47     ; --                      ; --                  ; 00:03:29                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4845 MB             ; 00:00:38                           ;
+; Fitter                    ; 00:01:17     ; 1.1                     ; 6665 MB             ; 00:02:36                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4856 MB             ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.5                     ; 5174 MB             ; 00:00:15                           ;
+; Total                     ; 00:02:00     ; --                      ; --                  ; 00:03:41                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

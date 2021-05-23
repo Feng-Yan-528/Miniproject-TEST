@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LT24TestProject
-Sat May 22 14:26:39 2021
+Sat May 22 17:52:27 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat May 22 14:26:39 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sat May 22 17:52:27 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; LT24TestProject                             ;
 ; Top-level Entity Name           ; LT24Top                                     ;
@@ -576,7 +576,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat May 22 14:26:20 2021
+    Info: Processing started: Sat May 22 17:52:07 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LT24TestProject -c LT24TestProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -592,7 +592,7 @@ Info (12021): Found 4 design units, including 4 entities, in source file lt24dis
     Info (12023): Found entity 3: ResetSynchroniser File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Display.v Line: 493
     Info (12023): Found entity 4: LT24InitialData File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Display.v Line: 523
 Info (12127): Elaborating entity "LT24Top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at LT24Top.v(175): truncated value with size 32 to match size of target (16) File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Top.v Line: 175
+Warning (10230): Verilog HDL assignment warning at LT24Top.v(158): truncated value with size 32 to match size of target (16) File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Top.v Line: 158
 Info (12128): Elaborating entity "LT24Display" for hierarchy "LT24Display:Display" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Top.v Line: 98
 Info (12128): Elaborating entity "ResetSynchroniser" for hierarchy "LT24Display:Display|ResetSynchroniser:resetGen" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Display.v Line: 157
 Info (12128): Elaborating entity "LT24InitialData" for hierarchy "LT24Display:Display|LT24InitialData:initDataRom" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/LT24Display.v Line: 174
@@ -620,7 +620,6 @@ Info (12133): Instantiated megafunction "t3:test|altsyncram:altsyncram_component
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c7f1.tdf
     Info (12023): Found entity 1: altsyncram_c7f1 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/db/altsyncram_c7f1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_c7f1" for hierarchy "t3:test|altsyncram:altsyncram_component|altsyncram_c7f1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Critical Warning (127005): Memory depth (65536) in the design file differs from memory depth (54000) in the Memory Initialization File "C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/l24.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/t3.v Line: 81
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
     Info (12023): Found entity 1: decode_61a File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/db/decode_61a.tdf Line: 22
 Info (12128): Elaborating entity "decode_61a" for hierarchy "t3:test|altsyncram:altsyncram_component|altsyncram_c7f1:auto_generated|decode_61a:rden_decode" File: C:/Users/YF/workspace/ELEC5566M-MiniProject-Feng-Yan-528/TEST/Miniproject-TEST/db/altsyncram_c7f1.tdf Line: 40
@@ -643,10 +642,10 @@ Info (21057): Implemented 417 device resources after synthesis - the final resou
     Info (21061): Implemented 259 logic cells
     Info (21064): Implemented 128 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Sat May 22 14:26:39 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Sat May 22 17:52:27 2021
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:38
 
 

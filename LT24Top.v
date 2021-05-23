@@ -1,9 +1,9 @@
 /*
  * LT24 Test Pattern Top
  * ------------------------
- * By: FENG YAN
+ * By: Thomas Carpenter
  * For: University of Leeds
- * Date: 20 MAY 2021
+ * Date: 13th February 2019
  *
  * Change Log
  * ----------
@@ -13,7 +13,8 @@
  * Short Description
  * -----------------
  * This module is designed to interface with the LT24 Display Module
- * from Terasic. It makes use of the LT24Display IP core to show a colorful picture
+ * from Terasic. It makes use of the LT24Display IP core to show a
+ * simple test pattern on the display.
  *
  */
 
@@ -56,10 +57,10 @@ reg         pixelWrite;
 //
 localparam LCD_WIDTH  = 240;
 localparam LCD_HEIGHT = 320;
-localparam PIC_X_START = 8'd10;
-localparam PIC_Y_START = 9'd10;
-localparam PIC_WIDTH =  200;
-localparam PIC_HEIGHT = 270;
+localparam PIC_X_START = 8'd60;
+localparam PIC_Y_START = 9'd00;
+localparam PIC_WIDTH =  120;
+localparam PIC_HEIGHT = 320;
 
 localparam BACK_COLOR = 16'b0000000000000000;
 
@@ -138,6 +139,23 @@ t3 test(
 .clock(clock),
 .q(rom_rd)
 );
+//
+// Pixel Write
+//
+//always @ (posedge clock or posedge resetApp) begin
+always @ (posedge clock or posedge resetApp) begin
+     if (resetApp) begin
+ //     if (!globalReset) begin
+        pixelWrite <= 1'b0;
+    end else begin
+        //In this example we always set write high, and use pixelReady to detect when
+        //to update the data.
+        pixelWrite <= 1'b1;
+        //You could also control pixelWrite and pixelData in a State Machine.
+    end
+end
+
+//
 
 always@(posedge clock or posedge globalReset)begin
     if(globalReset)begin
@@ -155,7 +173,7 @@ always @ (posedge clock or posedge globalReset) begin
         rom_addr <= 16'd0;
 		  end else 
         if((yAddr >= PIC_Y_START) && (yAddr < PIC_Y_START + PIC_HEIGHT) && (xAddr >= PIC_X_START) &&(xAddr < PIC_X_START + PIC_WIDTH)) begin   
-        rom_addr <=({xCount}/1*1+{yCount}*200) ;
+        rom_addr <=({xCount}/2+{yCount}*PIC_WIDTH) ;
         end
 		  else
         rom_addr <= 16'd0;
