@@ -1,4 +1,10 @@
 
+State Machine - |LT24Top|stateM
+Name stateM.C_STATE stateM.A_STATE stateM.B_STATE 
+stateM.A_STATE 0 0 0 
+stateM.B_STATE 0 1 1 
+stateM.C_STATE 1 1 0 
+
 State Machine - |LT24Top|LT24Display:Display|stateMachine
 Name stateMachine.IDLE_STATE stateMachine.CASET_STATE stateMachine.XHADDR_STATE stateMachine.XLADDR_STATE stateMachine.PASET_STATE stateMachine.YHADDR_STATE stateMachine.YLADDR_STATE stateMachine.WRITE_STATE stateMachine.CMD_STATE stateMachine.LOAD_STATE stateMachine.INIT_STATE 
 stateMachine.INIT_STATE 0 0 0 0 0 0 0 0 0 0 0 
